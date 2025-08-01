@@ -1,12 +1,11 @@
 pipeline {
-    agent {
-        label 'windows'   // Ensure your Windows Jenkins node has this label
-    }
+    agent any
     stages {
         stage('Echo Message') {
             steps {
-                bat 'echo Hello from Windows Jenkins Agent!'
+                bat 'echo Hello from Windows Jenkins!'
             }
         }
     }
 }
+
