@@ -1,0 +1,12 @@
+pipeline {
+    agent {
+        label 'windows'   // Ensure your Windows Jenkins node has this label
+    }
+    stages {
+        stage('Echo Message') {
+            steps {
+                bat 'echo Hello from Windows Jenkins Agent!'
+            }
+        }
+    }
+}
